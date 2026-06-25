@@ -1,15 +1,17 @@
 # Protein-Data-sorting-Protein-Anomaly-Detector
-import pandas as pd
-from sklearn.impute import SimpleImputer
-from sklearn.preprocessing import StandardScaler
-from sklearn.ensemble import IsolationForest
-
-print("Attempting to load the Excel file...")
 
 
-file_name = 'Data_Cortex_Nuclear.xls' 
+    import pandas as pd
+    from sklearn.impute import SimpleImputer
+    from sklearn.preprocessing import StandardScaler
+    from sklearn.ensemble import IsolationForest
 
-try:
+    print("Attempting to load the Excel file...")
+
+
+    file_name = 'Data_Cortex_Nuclear.xls' 
+
+    try:
   
     df = pd.read_excel(file_name)
     
@@ -62,7 +64,9 @@ try:
     rows, columns = df.shape
     print(f"\nYour dataset has {rows} rows and {columns} columns.")
 
-except FileNotFoundError:
+    except FileNotFoundError:
     print(f"\nERROR: Python could not find a file named '{file_name}'.")
     print("Please check that the Excel file is inside the exact same folder as this Python file!")
     
+
+
