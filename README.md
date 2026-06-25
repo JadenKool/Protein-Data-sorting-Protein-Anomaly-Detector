@@ -1,5 +1,7 @@
 # Protein-Data-sorting-Protein-Anomaly-Detector
 
+This repository contains an automated data processing and machine learning pipeline designed to identify anomalous data points within large-scale biological datasets. Built using Python, Pandas, and Scikit-Learn, the script utilizes an unsupervised Isolation Forest algorithm to automatically detect the top 5% of aberrant protein expression profiles, replacing the need for manual spreadsheet review. The pipeline is built to handle missing values via mean imputation, scale high-dimensional features, and seamlessly export flagged anomalies into a structured format for further analysis. This project was developed and tested using the Mice Protein Expression dataset provided by the UCI Machine Learning Repository.
+
 
     import pandas as pd
     from sklearn.impute import SimpleImputer
